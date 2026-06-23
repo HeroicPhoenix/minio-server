@@ -1,0 +1,26 @@
+server:
+  port: ${PORT:58080}
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+spring:
+  application:
+    name: minio-server
+
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+file-center:
+  bucket-name: ${FILE_CENTER_BUCKET_NAME:flc-center-bucket}
+  object-prefix: ${FILE_CENTER_OBJECT_PREFIX:common}
+
+minio:
+  endpoint: ${MINIO_ENDPOINT:http://127.0.0.1:59000}
+  access-key: ${MINIO_ACCESS_KEY:admin}
+  secret-key: ${MINIO_SECRET_KEY:Machenkai991102!}

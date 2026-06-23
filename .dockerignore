@@ -1,0 +1,16 @@
+.git
+.idea
+.vscode
+
+**/.DS_Store
+**/target
+**/*.iml
+
+README.md
+*.log
+
+# Docker 构建时不需要本地 Maven 缓存或临时文件。
+.mvn
+.m2
+tmp
+temp
